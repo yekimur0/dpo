@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="./bvi.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+   <title>Document</title>
+</head>
+<body>
+
+   <header class="header">
+      <div class="header__top">
+         <div class="container header__top-wrapper">
+            <nav class="header__top-nav">
+               <ul class="header__top-nav-list">
+                  <li class="header__top-nav-item">
+                     <a class="" href="">Лицензии</a>
+                  </li>
+                  <li class="header__top-nav-item">
+                     <a class="" href="">Оплата</a>
+                  </li>
+                  <li class="header__top-nav-item">
+                     <a class="" href="">FAQ</a>
+                  </li>
+                  <li class="header__top-nav-item">
+                     <a class="" href="">Статьи</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <div class="header__top-right" id="top-actions">
+               <div class="header__licens">
+                  Лицензия на образовательную деятельность № 3633 от 26.11.2018
+               </div>
+               <a class="header__check" href="">Проверить</a>
+               <button class="header__vis" id="vers" type="button">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2.06202 12.348C1.97868 12.1235 1.97868 11.8765 2.06202 11.652C2.87372 9.68385 4.25153 8.00104 6.02079 6.8169C7.79004 5.63276 9.87106 5.00062 12 5.00062C14.129 5.00062 16.21 5.63276 17.9792 6.8169C19.7485 8.00104 21.1263 9.68385 21.938 11.652C22.0214 11.8765 22.0214 12.1235 21.938 12.348C21.1263 14.3161 19.7485 15.999 17.9792 17.1831C16.21 18.3672 14.129 18.9994 12 18.9994C9.87106 18.9994 7.79004 18.3672 6.02079 17.1831C4.25153 15.999 2.87372 14.3161 2.06202 12.348Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  Версия для слабовидящих
+               </button>
+            </div>
+         </div>
+      </div>
+      <div class="header__middle">
+         <div class="container header__middle-wrapper">
+            <a class="header__logo" href="/">
+               <img src="./logo.webp" width="100" height="85"  alt="">
+               <p class="header__logo-desc">Учебный центр профессионального образования</p>
+            </a>
+            <div class="header__middle-burger">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div class="header__actions">
+               <div class="header__action header__action-mail">
+                  <div class="header__action-text">График работы Пн-Пт с 9:00 до 18:00</div>
+                  <a class="header__mail" href="mailto:obrprofstandart@yandex.ru">
+                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_292_7610)">
+                          <path d="M24.6649 13C24.6649 10.6257 23.9212 8.31092 22.5382 6.38094C21.1551 4.45095 19.2023 3.00265 16.954 2.23944C14.7056 1.47622 12.2747 1.43644 10.0026 2.12569C7.73046 2.81492 5.7313 4.19856 4.28589 6.08227C2.84047 7.96597 2.0214 10.2551 1.94371 12.6282C1.86603 15.0013 2.53363 17.3391 3.85274 19.3133C5.17187 21.2875 7.07625 22.799 9.29842 23.6353C11.5206 24.4717 13.949 24.5909 16.2424 23.9765" stroke="#1A8EF1" stroke-width="1.13636" stroke-linecap="round" />
+                          <path d="M13.3014 18.0506C16.0907 18.0506 18.3519 15.7894 18.3519 13.0001C18.3519 10.2108 16.0907 7.94962 13.3014 7.94962C10.512 7.94962 8.25085 10.2108 8.25085 13.0001C8.25085 15.7894 10.512 18.0506 13.3014 18.0506Z" stroke="#1A8EF1" stroke-width="1.13636" />
+                          <path d="M18.3516 9.21249V14.8943C18.3516 16.6376 19.7649 18.0509 21.5082 18.0509C23.2515 18.0509 24.6648 16.6376 24.6648 14.8943V13.0003" stroke="#1A8EF1" stroke-width="1.13636" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_292_7610">
+                            <rect width="25" height="25" fill="white" transform="translate(0.80127 0.5)" />
+                          </clipPath>
+                        </defs>
+                     </svg>
+                     obrprofstandart@yandex.ru
+                  </a>
+               </div>
+               <div class="header__action header__action-phone">
+                  <div class="header__action-text">Звонок по России бесплатный</div>
+                  <a class="header__phone" href="tel:+79999999">
+                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_292_7620)">
+                          <path d="M3.48087 3.37593L4.6497 2.20711C5.04022 1.81658 5.67339 1.81658 6.06391 2.20711L10.2052 6.34845C10.5958 6.73897 10.5958 7.37214 10.2052 7.76266L8.51201 9.45591C8.28661 9.6813 8.23074 10.0256 8.37329 10.3107C10.0214 13.607 12.6942 16.2798 15.9905 17.928C16.2756 18.0705 16.6199 18.0146 16.8453 17.7892L18.5385 16.096C18.9291 15.7055 19.5622 15.7055 19.9528 16.096L24.0941 20.2373C24.4846 20.6279 24.4846 21.261 24.0941 21.6516L22.9253 22.8204C20.8139 24.9317 17.4713 25.1693 15.0826 23.3777L10.7631 20.1381C9.01962 18.8304 7.4708 17.2816 6.16315 15.5381L2.92351 11.2186C1.13197 8.82985 1.36952 5.48728 3.48087 3.37593Z" stroke="#1A8EF1" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_292_7620">
+                            <rect width="25" height="25" fill="white" transform="translate(0.80127 0.5)" />
+                          </clipPath>
+                        </defs>
+                     </svg>
+                     8 (963) 995-77-84
+                  </a>
+               </div>
+
+               <div class="header__socials">
+                  <a clsas="header__social" href="">
+                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.168213" width="40" height="40" rx="20" fill="#27A6E5" />
+                        <path d="M28.1682 12.6022L25.1628 28.2923C25.1628 28.2923 24.7423 29.3801 23.5871 28.8584L16.6528 23.3526L16.6206 23.3364C17.5573 22.4654 24.8206 15.7027 25.1381 15.3961C25.6295 14.9214 25.3244 14.6387 24.7538 14.9974L14.025 22.053L9.88585 20.6108C9.88585 20.6108 9.23447 20.3708 9.17181 19.8491C9.10832 19.3265 9.90729 19.0439 9.90729 19.0439L26.7813 12.1889C26.7813 12.1889 28.1682 11.5579 28.1682 12.6022V12.6022Z" fill="#FEFEFE" />
+                     </svg>
+                  </a>
+                  <a clsas="header__social" href="">
+                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.168213" width="40" height="40" rx="20" fill="#48C95F" />
+                        <path d="M28.095 12.0625C26.1194 10.0937 23.4853 9 20.7048 9C14.9243 9 10.2414 13.6667 10.2414 19.4271C10.2414 21.25 10.7536 23.0729 11.6316 24.6042L10.1682 30L15.7292 28.5417C17.2658 29.3438 18.9487 29.7813 20.7048 29.7813C26.4853 29.7813 31.1682 25.1146 31.1682 19.3542C31.095 16.6563 30.0706 14.0312 28.095 12.0625ZM25.7536 23.1458C25.5341 23.7292 24.5097 24.3125 23.9975 24.3854C23.5585 24.4583 22.9731 24.4583 22.3877 24.3125C22.0219 24.1667 21.5097 24.0208 20.9243 23.7292C18.2902 22.6354 16.6072 20.0104 16.4609 19.7917C16.3146 19.6458 15.3633 18.4062 15.3633 17.0937C15.3633 15.7812 16.0219 15.1979 16.2414 14.9062C16.4609 14.6146 16.7536 14.6146 16.9731 14.6146C17.1194 14.6146 17.3389 14.6146 17.4853 14.6146C17.6316 14.6146 17.8511 14.5417 18.0707 15.0521C18.2902 15.5625 18.8024 16.875 18.8755 16.9479C18.9487 17.0937 18.9487 17.2396 18.8755 17.3854C18.8024 17.5313 18.7292 17.6771 18.5828 17.8229C18.4365 17.9687 18.2902 18.1875 18.217 18.2604C18.0706 18.4062 17.9243 18.5521 18.0707 18.7708C18.217 19.0625 18.7292 19.8646 19.5341 20.5937C20.5585 21.4687 21.3633 21.7604 21.656 21.9063C21.9487 22.0521 22.095 21.9792 22.2414 21.8333C22.3877 21.6875 22.8999 21.1042 23.0463 20.8125C23.1926 20.5208 23.4121 20.5938 23.6316 20.6667C23.8511 20.7396 25.1682 21.3958 25.3877 21.5417C25.6804 21.6875 25.8267 21.7604 25.8999 21.8333C25.9731 22.0521 25.9731 22.5625 25.7536 23.1458Z" fill="white" />
+                     </svg>
+                  </a>
+                  <a class="header__social header__social-phone" href="">
+                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" width="40" height="40" rx="20" fill="#1A8EF1"/>
+                        <path d="M30.4994 24.9738V27.9846C30.5005 28.2642 30.4431 28.5408 30.331 28.7969C30.2188 29.053 30.0542 29.2829 29.8478 29.4719C29.6415 29.6608 29.3978 29.8047 29.1325 29.8942C28.8672 29.9838 28.5861 30.017 28.3072 29.9919C25.2128 29.6563 22.2404 28.601 19.6289 26.9108C17.1992 25.3699 15.1393 23.3141 13.5953 20.8892C11.8959 18.271 10.8382 15.2901 10.5082 12.1879C10.483 11.9104 10.5161 11.6307 10.6052 11.3666C10.6943 11.1025 10.8376 10.8599 11.0258 10.6541C11.2141 10.4483 11.4432 10.2838 11.6986 10.1712C11.954 10.0586 12.2301 10.0004 12.5093 10.0001H15.5261C16.0141 9.9953 16.4872 10.1678 16.8572 10.4854C17.2273 10.803 17.469 11.244 17.5373 11.7263C17.6646 12.6898 17.9007 13.6359 18.2412 14.5464C18.3765 14.9056 18.4058 15.296 18.3256 15.6713C18.2454 16.0466 18.059 16.3911 17.7887 16.664L16.5116 17.9386C17.9431 20.4512 20.0276 22.5315 22.5451 23.9602L23.8222 22.6856C24.0956 22.4158 24.4408 22.2298 24.8169 22.1498C25.1929 22.0698 25.5841 22.099 25.944 22.234C26.8564 22.5738 27.8043 22.8095 28.7698 22.9365C29.2582 23.0053 29.7044 23.2509 30.0233 23.6265C30.3422 24.0021 30.5116 24.4817 30.4994 24.9738Z" fill="white"/>
+                     </svg>                        
+                  </a>
+               </div>
+
+               <button type="button" class="header__btn">Заказать звонок</button>
+            </div>
+
+            
+         </div>
+      </div>
+      <div class="header__bottom">
+         <div class="container header__bottom-wrapper">
+            <div class="burger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+            <div class="header__bottom-block">
+               <nav class="header__nav">
+                  <ul class="nav" id="main-nav">
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Обучение</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Переподготовка</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Повышение квалификации</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Сертификация ISO</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="n-obuch">
+         <div class="container">
+
+            <h2 class="n-obuch-title">Программа обучения “Повар”</h2>
+
+            <div class="n-obuch-info">
+               <div class="n-obuch-text">Примерная программа обучения, может быть скорректирована</div>
+               <div class="n-obuch-plan">Учебный план курса “Повар” на 320 часов</div>
+            </div>
+
+            <div class="n-obuch-table">
+               <table>
+                   <thead class="t-head">
+                       <tr>
+                           <th>Название раздела</th>
+                           <th>Количество часов</th>
+                       </tr>
+                   </thead>
+                   <tbody class="t-body">
+                       <tr>
+                           <td><strong>Основы кулинарного искусства:</strong></td>
+                           <td><strong>40</strong></td>
+                       </tr>
+                       <tr>
+                           <td>Ознакомление с различными видами кухонь и гастрономическими традициями.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Изучение основных кулинарных техник и приемов приготовления пищи.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Советы по оснащению кухни и выбору кухонного инвентаря.</td>
+                           <td>10</td>
+                       </tr>
+                       <tr>
+                           <td><strong>Рецепты и меню-планирование:</strong></td>
+                           <td><strong>40</strong></td>
+                       </tr>
+                       <tr>
+                           <td>Изучение разнообразных рецептов от классических до современных.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Практические уроки по составлению меню для различных типов мероприятий и повседневного питания.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Обучение технике оформления блюд и подачи на стол.</td>
+                           <td>10</td>
+                       </tr>
+                       <tr>
+                           <td><strong>Безопасность и санитарные нормы:</strong></td>
+                           <td><strong>40</strong></td>
+                       </tr>
+                       <tr>
+                           <td>Осознание важности соблюдения гигиенических и санитарных норм в кулинарии.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Обучение правильной обработке и хранению продуктов.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Предупреждение возможных опасностей и аварий в кухне.</td>
+                           <td>10</td>
+                       </tr>
+                       <tr>
+                           <td><strong>Управление кухней и организация работы:</strong></td>
+                           <td><strong>40</strong></td>
+                       </tr>
+                       <tr>
+                           <td>Основы организации рабочего процесса на кухне.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Планирование закупок продуктов и составление расписания работы.</td>
+                           <td>15</td>
+                       </tr>
+                       <tr>
+                           <td>Управление командой и эффективное взаимодействие с коллегами.</td>
+                           <td>10</td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+
+
+
+
+         </div>
+
+      </section>
+
+      <section class="n-docs">
+         <div class="container">
+            <h2 class="n-docs-title">Необходимые документы для начала обучения</h2>
+
+            <div class="n-docs-items">
+               <div class="n-docs-item">
+                  <div class="n-docs-item-icon">
+                     <img src="./img/doc-1.svg" width="200" height="142" alt="">
+                  </div>
+
+                  <div class="n-docs-item-content">
+                     <div class="n-docs-item-title">Заявка на обучение</div>
+                     <ul class="n-docs-item-list">
+                        <li>ФИО</li>
+                        <li>Специальность</li>
+                        <li>Разряд</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="n-docs-item">
+                  <div class="n-docs-item-icon">
+                     <img src="./img/doc-3.svg" width="200" height="142" alt="">
+                  </div>
+
+                  <div class="n-docs-item-content">
+                     <div class="n-docs-item-title">Паспорт</div>
+                     <ul class="n-docs-item-list">
+                        <li>Паспортные данные для заключения договора (фото/мкан)</li>
+                    
+                     </ul>
+                  </div>
+               </div>
+               <div class="n-docs-item">
+                  <div class="n-docs-item-icon">
+                     <img src="./img/doc-2.svg" width="200" height="142" alt="">
+                  </div>
+
+                  <div class="n-docs-item-content">
+                     <div class="n-docs-item-title">Заявка на обучение</div>
+                     <ul class="n-docs-item-list">
+                        <li>Для оформления удостоверения</li>
+                      
+                     </ul>
+                  </div>
+               </div>
+               <div class="n-docs-item">
+                  <div class="n-docs-item-icon">
+                     <img src="./img/doc-4.svg" width="200" height="142" alt="">
+                  </div>
+
+                  <div class="n-docs-item-content">
+                     <div class="n-docs-item-title">Адрес</div>
+                     <ul class="n-docs-item-list">
+                        <li>Для доставки оригиналов документов</li>
+                      
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="n-spec">
+         <div class="container">
+            <h2 class="n-spec-title">выберите подходящую специализацию</h2>
+
+            <div class="n-spec-items" data-simplebar style="max-height: 760px;">
+               <div class="n-spec-item">
+                  <div class="n-spec-block n-spec-left">
+                     <div class="n-spec-img">
+                        <img src="./img/spec-img.png" alt="">
+                     </div>
+                     <div class="n-spec-block n-spec-info">
+                        <div class="n-spec-name">Повар</div>
+                        <div class="n-spec-text">Продолжительность (ак.ч) <span>36</span></div>
+                        <div class="n-spec-text">код программы <span>1024</span></div>
+                     </div>
+                  </div>
+                  <div class="n-spec-block n-spec-mid">
+                     <div class="n-spec-price">
+                        <div class="n-spec-prices">
+                           <span class="bold">3 100 ₽</span>
+                           <span class="small">4 100 ₽</span>
+                        </div>
+                        <div class="n-spec-sale">-1 000 ₽</div>
+                     </div>
+                     <div class="n-spec-text">Выдаем документы</div>
+                     <div class="n-spec-text-accent">удостоверение, свидетельства</div>
+                  </div>
+                  <div class="n-spec-right">
+                     <button type="button" class="n-spec-btn">Записаться</button>
+                  </div>
+               </div>
+               <div class="n-spec-item">
+                  <div class="n-spec-block n-spec-left">
+                     <div class="n-spec-img">
+                        <img src="./img/spec-img.png" alt="">
+                     </div>
+                     <div class="n-spec-block n-spec-info">
+                        <div class="n-spec-name">Повар</div>
+                        <div class="n-spec-text">Продолжительность (ак.ч) <span>36</span></div>
+                        <div class="n-spec-text">код программы <span>1024</span></div>
+                     </div>
+                  </div>
+                  <div class="n-spec-block n-spec-mid">
+                     <div class="n-spec-price">
+                        <div class="n-spec-prices">
+                           <span class="bold">3 100 ₽</span>
+                           <span class="small">4 100 ₽</span>
+                        </div>
+                        <div class="n-spec-sale">-1 000 ₽</div>
+                     </div>
+                     <div class="n-spec-text">Выдаем документы</div>
+                     <div class="n-spec-text-accent">удостоверение, свидетельства</div>
+                  </div>
+                  <div class="n-spec-right">
+                     <button type="button" class="n-spec-btn">Записаться</button>
+                  </div>
+               </div>
+               <div class="n-spec-item">
+                  <div class="n-spec-block n-spec-left">
+                     <div class="n-spec-img">
+                        <img src="./img/spec-img.png" alt="">
+                     </div>
+                     <div class="n-spec-block n-spec-info">
+                        <div class="n-spec-name">Повар</div>
+                        <div class="n-spec-text">Продолжительность (ак.ч) <span>36</span></div>
+                        <div class="n-spec-text">код программы <span>1024</span></div>
+                     </div>
+                  </div>
+                  <div class="n-spec-block n-spec-mid">
+                     <div class="n-spec-price">
+                        <div class="n-spec-prices">
+                           <span class="bold">3 100 ₽</span>
+                           <span class="small">4 100 ₽</span>
+                        </div>
+                        <div class="n-spec-sale">-1 000 ₽</div>
+                     </div>
+                     <div class="n-spec-text">Выдаем документы</div>
+                     <div class="n-spec-text-accent">удостоверение, свидетельства</div>
+                  </div>
+                  <div class="n-spec-right">
+                     <button type="button" class="n-spec-btn">Записаться</button>
+                  </div>
+               </div>
+               <div class="n-spec-item">
+                  <div class="n-spec-block n-spec-left">
+                     <div class="n-spec-img">
+                        <img src="./img/spec-img.png" alt="">
+                     </div>
+                     <div class="n-spec-block n-spec-info">
+                        <div class="n-spec-name">Повар</div>
+                        <div class="n-spec-text">Продолжительность (ак.ч) <span>36</span></div>
+                        <div class="n-spec-text">код программы <span>1024</span></div>
+                     </div>
+                  </div>
+                  <div class="n-spec-block n-spec-mid">
+                     <div class="n-spec-price">
+                        <div class="n-spec-prices">
+                           <span class="bold">3 100 ₽</span>
+                           <span class="small">4 100 ₽</span>
+                        </div>
+                        <div class="n-spec-sale">-1 000 ₽</div>
+                     </div>
+                     <div class="n-spec-text">Выдаем документы</div>
+                     <div class="n-spec-text-accent">удостоверение, свидетельства</div>
+                  </div>
+                  <div class="n-spec-right">
+                     <button type="button" class="n-spec-btn">Записаться</button>
+                  </div>
+               </div>
+               <div class="n-spec-item">
+                  <div class="n-spec-block n-spec-left">
+                     <div class="n-spec-img">
+                        <img src="./img/spec-img.png" alt="">
+                     </div>
+                     <div class="n-spec-block n-spec-info">
+                        <div class="n-spec-name">Повар</div>
+                        <div class="n-spec-text">Продолжительность (ак.ч) <span>36</span></div>
+                        <div class="n-spec-text">код программы <span>1024</span></div>
+                     </div>
+                  </div>
+                  <div class="n-spec-block n-spec-mid">
+                     <div class="n-spec-price">
+                        <div class="n-spec-prices">
+                           <span class="bold">3 100 ₽</span>
+                           <span class="small">4 100 ₽</span>
+                        </div>
+                        <div class="n-spec-sale">-1 000 ₽</div>
+                     </div>
+                     <div class="n-spec-text">Выдаем документы</div>
+                     <div class="n-spec-text-accent">удостоверение, свидетельства</div>
+                  </div>
+                  <div class="n-spec-right">
+                     <button type="button" class="n-spec-btn">Записаться</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__container">
+            <div class="footer__col">
+               <div class="footer__col-top">
+                  <a class="footer__logo" href="/">
+                     <img src="/logo-white.png" width="72" height="87" alt="Учебный центр профессионального образования">
+                     <p class="footer__logo-desc">
+                        Учебный центр профессионального образования
+                     </p>
+                  </a>
+   
+                  <div class="footer__licens">
+                     Лицензия на образовательную деятельность № 3633 от 26.11.2018
+                  </div>
+               </div>
+               <a href="" class="footer__map">
+                  <span class="footer__map-text">54 филиала</span>
+                  <span class="footer__map-link">
+                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 4.80284C12.2414 4.80284 11.9863 4.74266 11.755 4.62707L8.245 2.87207C8.01367 2.75647 7.75861 2.69629 7.5 2.69629M12.5 4.80284C12.7586 4.80284 13.0137 4.74266 13.245 4.62707L16.2942 3.10207C16.4213 3.03853 16.5626 3.00857 16.7046 3.01504C16.8466 3.02151 16.9845 3.06418 17.1054 3.13901C17.2262 3.21384 17.3259 3.31833 17.395 3.44255C17.4641 3.56677 17.5002 3.7066 17.5 3.84873V14.4854C17.4999 14.6401 17.4568 14.7918 17.3754 14.9233C17.294 15.0549 17.1776 15.1612 17.0392 15.2304L13.245 17.1279C13.0137 17.2435 12.7586 17.3037 12.5 17.3037M12.5 4.80284V17.3037M12.5 17.3037C12.2414 17.3037 11.9863 17.2435 11.755 17.1279L8.245 15.3729C8.01367 15.2573 7.75861 15.1971 7.5 15.1971C7.24139 15.1971 6.98634 15.2573 6.755 15.3729L3.70584 16.8979C3.57863 16.9615 3.43727 16.9914 3.29522 16.9849C3.15316 16.9784 3.01513 16.9357 2.89427 16.8607C2.7734 16.7858 2.67372 16.6812 2.60471 16.5569C2.5357 16.4325 2.49965 16.2926 2.5 16.1504V5.51457C2.50009 5.35985 2.54324 5.20821 2.62463 5.07663C2.70602 4.94505 2.82244 4.83872 2.96084 4.76957L6.755 2.87207C6.98634 2.75647 7.24139 2.69629 7.5 2.69629M7.5 2.69629V15.1962" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                     смотреть на карте
+                  </span>
+                  
+               </a>
+            </div>
+            <div class="fooer__col fooer__col--nav">
+               <div class="footer__block">
+                  <div class="footer__sbtitle">Услуги</div>
+                  <nav class="footer__nav">
+                     <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                           <a href="">Обучение</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Переподготовка</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Повышение квалификации</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Сертификация ISO</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="footer__block">
+                  <div class="footer__sbtitle">Информация</div>
+                  <nav class="footer__nav">
+                     <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                           <a href="">Лицензии</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Оплата</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">FAQ</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Отзывы</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Статьи</a>
+                        </li>
+                        <li class="footer__nav-item">
+                           <a href="">Контакты</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+
+            <div class="footer__col footer__col-contacts">
+               <div class="footer__phone">
+                  <a class="footer__phone-link" href="">
+                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.49619 2.87578L3.66502 1.70696C4.05554 1.31643 4.68871 1.31643 5.07923 1.70696L9.22057 5.8483C9.6111 6.23882 9.6111 6.87199 9.22057 7.26251L7.52733 8.95576C7.30193 9.18115 7.24606 9.52549 7.38861 9.81059C9.03675 13.1069 11.7096 15.7796 15.0059 17.4278C15.291 17.5703 15.6353 17.5145 15.8607 17.2891L17.5539 15.5958C17.9445 15.2053 18.5776 15.2053 18.9682 15.5958L23.1095 19.7372C23.5 20.1278 23.5 20.7608 23.1095 21.1514L21.9407 22.3202C19.8293 24.4315 16.4867 24.6692 14.098 22.8776L9.77847 19.6379C8.03494 18.3302 6.48612 16.7815 5.17847 15.038L1.93883 10.7185C0.147291 8.3297 0.384842 4.98713 2.49619 2.87578Z" stroke="white" />
+                     </svg>
+                     8 (800) 551-44-87
+                  </a>
+                  <span class="footer__phone-text">Звонок по России бесплатный</span>
+               </div>
+
+               <button type="button" class="footer__btn">Заявка на Обучение</button>
+               <div class="footer__socials">
+                  <a class="footer__socials-link" href="">
+                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.0841064" width="40" height="40" rx="20" fill="#27A6E5" />
+                        <path d="M28.0841 12.6022L25.0787 28.2923C25.0787 28.2923 24.6582 29.3801 23.503 28.8584L16.5687 23.3526L16.5365 23.3364C17.4732 22.4654 24.7365 15.7027 25.0539 15.3961C25.5454 14.9214 25.2403 14.6387 24.6697 14.9974L13.9409 22.053L9.80174 20.6108C9.80174 20.6108 9.15036 20.3708 9.0877 19.8491C9.02421 19.3265 9.82318 19.0439 9.82318 19.0439L26.6972 12.1889C26.6972 12.1889 28.0841 11.5579 28.0841 12.6022Z" fill="#FEFEFE" />
+                     </svg>
+                  </a>
+                  <a class="footer__socials-link" href="">
+                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.0841064" width="40" height="40" rx="20" fill="#48C95F" />
+                        <path d="M28.0109 12.0625C26.0353 10.0937 23.4012 9 20.6207 9C14.8402 9 10.1573 13.6667 10.1573 19.4271C10.1573 21.25 10.6695 23.0729 11.5475 24.6042L10.0841 30L15.6451 28.5417C17.1817 29.3438 18.8646 29.7812 20.6207 29.7812C26.4012 29.7812 31.0841 25.1146 31.0841 19.3542C31.0109 16.6563 29.9865 14.0312 28.0109 12.0625ZM25.6695 23.1458C25.45 23.7292 24.4256 24.3125 23.9134 24.3854C23.4743 24.4583 22.889 24.4583 22.3036 24.3125C21.9378 24.1667 21.4256 24.0208 20.8402 23.7292C18.2061 22.6354 16.5231 20.0104 16.3768 19.7917C16.2304 19.6458 15.2792 18.4062 15.2792 17.0937C15.2792 15.7812 15.9378 15.1979 16.1573 14.9062C16.3768 14.6146 16.6695 14.6146 16.889 14.6146C17.0353 14.6146 17.2548 14.6146 17.4012 14.6146C17.5475 14.6146 17.767 14.5417 17.9865 15.0521C18.2061 15.5625 18.7183 16.875 18.7914 16.9479C18.8646 17.0938 18.8646 17.2396 18.7914 17.3854C18.7183 17.5312 18.6451 17.6771 18.4987 17.8229C18.3524 17.9687 18.2061 18.1875 18.1329 18.2604C17.9865 18.4062 17.8402 18.5521 17.9865 18.7708C18.1329 19.0625 18.6451 19.8646 19.45 20.5937C20.4743 21.4687 21.2792 21.7604 21.5719 21.9063C21.8646 22.0521 22.0109 21.9792 22.1573 21.8333C22.3036 21.6875 22.8158 21.1042 22.9622 20.8125C23.1085 20.5208 23.328 20.5938 23.5475 20.6667C23.767 20.7396 25.0841 21.3958 25.3036 21.5417C25.5963 21.6875 25.7426 21.7604 25.8158 21.8333C25.889 22.0521 25.889 22.5625 25.6695 23.1458Z" fill="white" />
+                      </svg>
+                  </a>
+                  
+               </div>
+               <div class="footer__time">График работы Пн-Пт с 9:00 до 18:00</div>
+               <a class="footer__mail" href="">
+                  <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M24.3638 12.5004C24.3638 10.126 23.62 7.81127 22.237 5.88129C20.854 3.9513 18.9011 2.503 16.6528 1.73979C14.4044 0.976573 11.9735 0.936793 9.70142 1.62604C7.42931 2.31528 5.43015 3.69891 3.98474 5.58262C2.53932 7.46632 1.72025 9.75546 1.64256 12.1285C1.56488 14.5016 2.23248 16.8394 3.55159 18.8136C4.87072 20.7879 6.77511 22.2993 8.99728 23.1357C11.2194 23.9721 13.6478 24.0913 15.9413 23.4768" stroke="white" stroke-width="1.13636" stroke-linecap="round" />
+                     <path d="M13.0002 17.5502C15.7895 17.5502 18.0507 15.289 18.0507 12.4997C18.0507 9.7104 15.7895 7.44922 13.0002 7.44922C10.2109 7.44922 7.94971 9.7104 7.94971 12.4997C7.94971 15.289 10.2109 17.5502 13.0002 17.5502Z" stroke="white" stroke-width="1.13636" />
+                     <path d="M18.0503 8.71289V14.3947C18.0503 16.138 19.4636 17.5513 21.2069 17.5513C22.9502 17.5513 24.3635 16.138 24.3635 14.3947V12.5007" stroke="white" stroke-width="1.13636" stroke-linecap="round" />
+                  </svg>
+                  obrprofstandart@yandex.ru
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer__bottom">
+         <div class="container footer__bottom-wrapper">
+            <a class="footer__bottom-link footer__policy" href="">Пользовательское соглашение</a>
+            <a class="footer__bottom-link footer__conf" href="">Политика конфиндециальности</a>
+            <a class="footer__bottom-link footer__bvi" href="">Политика конфиндециальности</a>
+         </div>
+      </div>
+   </footer>
+   
+   <script src="https://cdn.jsdelivr.net/npm/transfer-elements@1.0.7/dist/transfer-elements.min.js"></script>
+   <script src="./bvi.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+   <script src="./js.js"></script>
+
+</body>
+</html>
